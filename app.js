@@ -120,6 +120,10 @@ function displayCart() {
                             <p>${item.name}</p>
                         </div>   
                     </div>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" typr="number" value="1">
+                        <button class="btn btn-danger" type="button"> REMOVE ITEM</button>
+                    </div>
                 </td>
                  
                 <td>
