@@ -110,62 +110,31 @@ function displayCart() {
 
             productContainer.innerHTML += `
             <tr>
-                 <td>
+                <td>
                     <div class="media">
                         <div class="d-flex">
                             <img src="./img/product/${item.tag}.jpg" alt="" />
                         </div>
-                                       
                         <div class="media-body">
                             <p>${item.name}</p>
-                        </div>   
-                    </div>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" typr="number" value="1">
-                        <button class="btn btn-danger" type="button"> REMOVE ITEM</button>
+                        </div>
                     </div>
                 </td>
-                 
                 <td>
                     <h5>$${item.price}.00</h5>
                 </td>
-                                
-                <tr> 
+                <td>
                     <i class="fas fa-minus"></i>
                     <span>${item.inCart}</span>
                     <i class="fas fa-plus plus-button"></i>
-                 
-                </tr>
-                
+                </td>
                 <td>
                     <h5>$${item.inCart * item.price}.00</h5>
                 </td>
+                <td>
+                    <a class="btn_3">Remove</a>
+                </td>
             </tr>`;
-
-            /*productContainer.innerHTML += `
-             <tr class="product cart-product">
-                 <i class="fas  fa-times-circle"></i>
-                 <img src ="./img/product/${item.tag}.jpg">
-                 <span>${item.name}</span>
-             </tr>
-             <tr class='price'>$${item.price}.00</tr>
-             <tr> 
-                 <i class="fas fa-minus"></i>
-                 <span>${item.inCart}</span>
-                 <i class="fas fa-plus plus-button"></i>
-                 
-             </tr>
-             <tr> 
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" typr="number" value="1">
-                        <button class="btn btn-danger" type="button"> REMOVE ITEM</button>
-                    </div>
-                
-            </tr>
-             <tr>
-                 $${item.inCart * item.price}.00
-             </tr>`; //change style of font using .cart_list class. also add classes to the tr */
-
         });
     }
 }
