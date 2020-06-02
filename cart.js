@@ -6,6 +6,10 @@ if (document.readyState == 'loading') {
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn_3')
+
+
+
+
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
@@ -35,10 +39,16 @@ function purchaseClicked() {
     updateCartTotal()
 }
 
+let productNumbers = localStorage.getItem("cartNumbers"); //allows us to update the number of items in a cart if they click 'add to cart' multiple times. is a string rn
+productNumbers = parseInt(productNumbers); //changes string to number
+
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
+
+    localStorage.setItem("cartNumbers", productNumbers - 1); //allows to add number of items in the cart
+    document.querySelector(".cartTotal ").textContent = productNumbers - 1;
 }
 
 function quantityChanged(event) {

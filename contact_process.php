@@ -22,7 +22,7 @@
 	
     $subject = 'You have a message from your Clear Window Mask Website.';
 
-    $logo = 'img/POWlogo.png';
+    $logo = 'img/POWpowHearingLogo.PNG';
     $link = '#';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
