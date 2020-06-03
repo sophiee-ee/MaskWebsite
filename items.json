@@ -1,0 +1,27 @@
+{
+    "mask": [{
+            "id": 1,
+            "name": "Black FaceMask",
+            "price": 20,
+            "imgName": "BlackMask.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Purple FaceMask",
+            "price": 20,
+            "imgName": "purpleMask.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Pink FaceMask",
+            "price": 20,
+            "imgName": "Pink-with-while-squares.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Rose FaceMask",
+            "price": 20,
+            "imgName": "Roses.jpg"
+        }
+    ]
+}
